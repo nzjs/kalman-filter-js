@@ -16,4 +16,4 @@ Recommended if you need a more robust implementation: https://github.com/wouterb
 
 ### Visualisation
 
-![Kalman filter applied to a noisy dataset.](https://github.com/wouterbulten/kalmanjs/resources/kalman-example.png?raw=true "Kalman filter applied to a noisy dataset.")
+![Kalman filter applied to a noisy dataset.](https://github.com/wouterbulten/kalmanjs/blob/master/resources/kalman-example.png?raw=true "Kalman filter applied to a noisy dataset.")
