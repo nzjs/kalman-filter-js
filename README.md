@@ -12,8 +12,7 @@ Recommended if you need a more robust implementation: https://github.com/wouterb
 ### Usage
 
 1. Initialise as `const kalman = new GPSKalmanFilter();`
-2. In your native mobile app, loop through the stored GPS data and apply the filter to each point
-2a. `let kalmanXY = kalman.filter(_lat, _lon, _acc, _timems)`
+2. In your native mobile app, loop through the stored GPS data and apply the filter `let kalmanXY = kalman.filter(_lat, _lon, _acc, _timems)`
 3. Results returned are smoothed lat/long GPS location values, increasingly smoothed as you continue iterating over locations
 
 ### Visualisation
