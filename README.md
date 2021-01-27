@@ -6,13 +6,15 @@ This is a basic javascript implementation of Kalman filtering for interpolation 
 The idea being that you apply this function on each new GPS point capture (eg. route tracking or navigation in a native mobile app).
 
 Background: https://www.wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/
+
 Recommended if you need a more robust implementation: https://github.com/wouterbulten/kalmanjs
 
 ### Usage
 
-1. Initialise as `new GPSKalmanFilter();`
+1. Initialise as `const kalman = new GPSKalmanFilter();`
 2. In your native mobile app, loop through the stored GPS data and apply the filter to each point
-3. Results returned are smoothed GPS location values as you continue iterating over new XY locations
+2a. `let kalmanXY = kalman.filter(_lat, _lon, _acc, _timems)`
+3. Results returned are smoothed lat/long GPS location values, increasingly smoothed as you continue iterating over locations
 
 ### Visualisation
 
